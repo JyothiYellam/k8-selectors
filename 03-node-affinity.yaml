@@ -17,7 +17,7 @@ spec:
                - us-east-1d
       preferredDuringScheduleIgnoredDuringExecution: 
       - weight: 100
-        prefernce:
+        preference:
           matchExpressions:
           - key: project 
             operator: In
