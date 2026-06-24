@@ -8,3 +8,27 @@ spec:
   containers:
   - name: nginx
     image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-2
+  labels:
+    tier: database
+spec:
+  affinity:
+    podAffinity:
+      #Hard Rule
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+             - key: tier
+               operator: Equal
+               values:
+               - database
+          topologyKey: topology.kubernetes.io/zone
+  containers:
+   - name: nginx
+     image: nginx
+
+              
