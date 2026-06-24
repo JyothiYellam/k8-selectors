@@ -24,4 +24,4 @@ spec:
             topologyKey: "kubernetes.io/hostname"
       containers:
         - name: redis-server
-          image: redis:3.2-alphine
+          image: redis:3.2-alpine
