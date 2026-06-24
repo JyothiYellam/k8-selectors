@@ -17,7 +17,8 @@ spec:
                - us-east-1d
             - key: project
               operator: In
-              values: amazon
+              values: 
+               - amazon
       
   containers:
   - name: nginx
