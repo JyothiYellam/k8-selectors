@@ -24,7 +24,7 @@ spec:
             values:
               - roboshop
       - weight: 10
-        prefernce:
+        preference:
           matchExpressions:
           - key: project 
             operator: In
