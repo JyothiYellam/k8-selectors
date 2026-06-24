@@ -14,10 +14,10 @@ kind: Pod
 metadata:
   name: pod-2
   labels:
-    tier: backend
+    tier: database
 spec:
   affinity:
-    podAntiAffinity:
+    podAffinity:
       #Hard Rule
       requiredDuringSchedulingIgnoredDuringExecution:
         - labelSelector:
